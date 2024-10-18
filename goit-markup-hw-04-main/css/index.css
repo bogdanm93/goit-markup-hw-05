@@ -1,0 +1,556 @@
+/* General Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #2E2F42;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #2E2F42;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Logo Styling */
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    text-decoration: none;
+    color: #2E2F42;
+}
+
+.logo span {
+    color: #4D5AE5;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/people-office1.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    z-index: 2; 
+}
+
+/* Overlay Layer */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1; 
+}
+
+/* Centered Text and Button */
+.hero .container {
+    position: relative;
+    z-index: 3; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Text styling */
+.hero h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF; 
+    max-width: 496px;
+    margin-bottom: 58px; 
+    z-index: 4; 
+}
+
+/* Buton styling */
+.hero button {
+    width: 169px; 
+    height: 56px; 
+    padding: 16px 32px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    z-index: 4; 
+}
+
+.hero button:hover {
+    background-color: #404BBF;
+}
+
+
+/* Social Media Icons */
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+}
+
+/* Section Spacing */
+.section {
+    padding: 60px 0;
+}
+
+/* Button Styles */
+button {
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #404BBF;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    border-bottom: 2px solid #E7E9FC;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 156px; 
+}
+
+header .logo {
+    margin-right: 75px; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 40px; 
+}
+
+nav ul li a {
+    color: #2E2F42;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #4D5AE5;
+    border-bottom: 2px solid #4D5AE5;
+}
+
+header .contacts {
+    display: flex;
+    gap: 35px; 
+    margin-left: 332px; 
+}
+
+header .contacts a {
+    color: #212121;
+    text-decoration: none;
+}
+
+header .contacts a:hover {
+    color: #404BBF;
+}
+
+/* Services Section */
+.services {
+    width: 1128px; 
+    height: 224px; 
+    padding: 60px 0;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.services dl {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.service-item {
+    background-color: #f9f9ff; 
+    padding: 20px;
+    border-radius: 5px;
+    width: 264px; 
+    height: 224px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-item img {
+    width: 264px; 
+    height: 112px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* Title for Service */
+.services dt {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px; 
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: 0.02em; 
+    text-align: left; 
+    color: #2E2F42; 
+    margin-bottom: 10px;
+}
+
+/* Descriptive text for Service */
+.services dd {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    letter-spacing: 0.02em;
+    text-align: left; 
+    color: #434455;
+    margin: 0;
+}
+
+
+/* What Are We Doing Section */
+.what-we-are-doing {
+    width: 1128px;
+    height: 412px; 
+    margin: 120px auto 0 auto; 
+    text-align: center;
+}
+
+/* Titlul secțiunii */
+.what-we-are-doing h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px; 
+    font-weight: 700; 
+    line-height: 40px; 
+    letter-spacing: 0.02em; 
+    text-align: center; 
+    color: #2E2F42; 
+    margin-bottom: 40px;
+}
+
+/* Galerie de imagini */
+.image-gallery {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+.image-item {
+    flex: 1;
+    max-width: 361px;
+    height: 300px;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px; 
+}
+
+/* Our Team Section */
+.team-section {
+    padding: 120px 0;
+    background-color: #f4f4fd;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.team-section h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2E2F42;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    max-width: 250px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius:0;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2E2F42;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2E2F42;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 232px; 
+    height: 40px; 
+    margin: 0 auto;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Customers Section */
+.customers-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.customers-section h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2E2F42;
+    margin-bottom: 40px;
+}
+
+.customer-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.customer-logo img {
+    width: 168px;
+    height: 88px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2E2F42;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 120px;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.footer-logo p {
+    font-size: 0.75rem;
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Social Media Section */
+.social-media {
+    width: 208px;
+    height: 80px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+}
+
+.social-media h3 {
+    width: 96px; 
+    height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #F4F4FD; 
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+/* Cutia pentru iconițele social media */
+.social-icons {
+    display: flex;
+    gap: 16px; 
+    width: 208px; 
+    height: 40px;
+}
+
+/* Dimensiunea fiecărei iconițe */
+.social-icons a {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Modal Backdrop and Modal Styling */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999; /* Asigură-te că are un z-index ridicat */
+}
+
+/* Show the modal and backdrop when is-hidden is removed */
+.backdrop:not(.is-hidden) {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Modal styling */
+.modal {
+    width: 408px;
+    height: 584px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1000; /* Modalul ar trebui să fie chiar mai sus decât backdrop-ul */
+}
+
+/* When modal is visible */
+.backdrop:not(.is-hidden) .modal {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Close button styling */
+.modal button[data-modal-close] {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+

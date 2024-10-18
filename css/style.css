@@ -1,0 +1,812 @@
+/* General Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #2E2F42;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #2E2F42;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Logo Styling */
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    text-decoration: none;
+    color: #2E2F42;
+}
+
+.logo span {
+    color: #4D5AE5;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/people-office1.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    z-index: 2; 
+}
+
+/* Overlay Layer */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1; 
+}
+
+/* Centered Text and Button */
+.hero .container {
+    position: relative;
+    z-index: 3; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Text styling */
+.hero h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF; 
+    max-width: 496px;
+    margin-bottom: 58px; 
+    z-index: 4; 
+}
+
+/* Buton styling */
+.hero button {
+    width: 169px; 
+    height: 56px; 
+    padding: 16px 32px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    z-index: 4; 
+}
+
+.hero button:hover {
+    background-color: #404BBF;
+}
+
+
+/* Social Media Icons */
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+}
+
+/* Section Spacing */
+.section {
+    padding: 60px 0;
+}
+
+/* Button Styles */
+button {
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #404BBF;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    border-bottom: 2px solid #E7E9FC;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 156px; 
+}
+
+header .logo {
+    margin-right: 75px; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 40px; 
+}
+
+nav ul li a {
+    color: #2E2F42;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #4D5AE5;
+    border-bottom: 2px solid #4D5AE5;
+}
+
+header .contacts {
+    display: flex;
+    gap: 35px; 
+    margin-left: 332px; 
+}
+
+header .contacts a {
+    color: #212121;
+    text-decoration: none;
+}
+
+header .contacts a:hover {
+    color: #404BBF;
+}
+
+/* Services Section */
+.services {
+    width: 1128px; 
+    height: 224px; 
+    padding: 60px 0;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.services dl {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.service-item {
+    background-color: #f9f9ff; 
+    padding: 20px;
+    border-radius: 5px;
+    width: 264px; 
+    height: 224px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-item img {
+    width: 264px; 
+    height: 112px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* Title for Service */
+.services dt {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px; 
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: 0.02em; 
+    text-align: left; 
+    color: #2E2F42; 
+    margin-bottom: 10px;
+}
+
+/* Descriptive text for Service */
+.services dd {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    letter-spacing: 0.02em;
+    text-align: left; 
+    color: #434455;
+    margin: 0;
+}
+
+
+/* What Are We Doing Section */
+.what-we-are-doing {
+    width: 1128px;
+    height: 412px; 
+    margin: 120px auto 0 auto; 
+    text-align: center;
+}
+
+/* Titlul secțiunii */
+.what-we-are-doing h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px; 
+    font-weight: 700; 
+    line-height: 40px; 
+    letter-spacing: 0.02em; 
+    text-align: center; 
+    color: #2E2F42; 
+    margin-bottom: 40px;
+}
+
+/* Galerie de imagini */
+.image-gallery {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+.image-item {
+    flex: 1;
+    max-width: 361px;
+    height: 300px;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px; 
+}
+
+/* Our Team Section */
+.team-section {
+    padding: 120px 0;
+    background-color: #f4f4fd;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.team-section h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2E2F42;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    max-width: 250px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius:0;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2E2F42;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2E2F42;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 232px; 
+    height: 40px; 
+    margin: 0 auto;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Customers Section */
+.customers-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.customers-section h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2E2F42;
+    margin-bottom: 40px;
+}
+
+.customer-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.customer-logo img {
+    width: 168px;
+    height: 88px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2E2F42;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 120px;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.footer-logo p {
+    font-size: 0.75rem;
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Social Media Section */
+.social-media {
+    width: 208px;
+    height: 80px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+}
+
+.social-media h3 {
+    width: 96px; 
+    height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #F4F4FD; 
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+/* Cutia pentru iconițele social media */
+.social-icons {
+    display: flex;
+    gap: 16px; 
+    width: 208px; 
+    height: 40px;
+}
+
+/* Dimensiunea fiecărei iconițe */
+.social-icons a {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Modal Backdrop and Modal Styling */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999; /* Asigură-te că are un z-index ridicat */
+}
+
+/* Show the modal and backdrop when is-hidden is removed */
+.backdrop:not(.is-hidden) {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Modal styling */
+.modal {
+    width: 408px;
+    height: 584px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1000; /* Modalul ar trebui să fie chiar mai sus decât backdrop-ul */
+}
+
+/* When modal is visible */
+.backdrop:not(.is-hidden) .modal {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Close button styling */
+.modal button[data-modal-close] {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+
+
+
+header .logo {
+    margin-right: 75px; /* Distanta intre logo si butonul Studio */
+}
+
+
+.footer-logo img {
+    max-width: 100%; /* Make the logo scale to fit the available width */
+    height: auto;
+    margin-bottom: 5px;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start; /* Align items left */
+    align-items: flex-start; /* Align both boxes at the top initially */
+    gap: 20px; /* Space between logo and social media */
+}
+
+
+/* Efect de hover pe imagine */
+.portfolio-item img {
+    width: 360px;
+    height: 300px;
+    object-fit: cover;
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* Social Media Section */
+.social-media {
+    width: 208px; /* Set width to 208px */
+    height: 80px; /* Set height to 80px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align content vertically */
+    align-items: flex-start; /* Align content to the left */
+    box-sizing: border-box;
+}
+
+
+/* Stilizare text în caseta de text */
+.text-box h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px; /* Dimensiunea fontului pentru titlu */
+    font-weight: 500; /* Greutatea fontului pentru titlu */
+    line-height: 24px;
+    color: #2E2F42;
+    margin: 0 0 8px 0;
+}
+
+
+.portfolio-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Footer Logo Section */
+.footer-logo {
+    width: 264px; /* Set the width to 264px */
+    height: 112px; /* Set the height to 112px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align content vertically */
+}
+
+
+/* Suprapunerea albastră la hover doar pe imagine */
+.portfolio-item .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(77, 90, 229, 0.8); /* Culoarea suprapunerii */
+    transform: translateY(100%); /* Inițial, suprapunerea este ascunsă */
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 156px; /* Distanta de la marginea stanga la logo */
+}
+
+/* Cutia cu butoane de filtru */
+.portfolio-filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px; /* Distanța între butoane */
+    width: 586px; /* Lățimea cutiei */
+    height: 48px; /* Înălțimea cutiei */
+    margin-left: auto;
+    margin-right: auto; /* Centrează cutia cu butoane */
+    margin-bottom: 30px;
+}
+
+
+
+/* Portfolio Section */
+/* Distanța dintre Header și Portfolio Section */
+.portfolio-section {
+    margin-top: 100px; /* Distanța de 100px între header și secțiunea de portofoliu */
+    text-align: center;
+}
+
+
+/* Layout pentru grid-ul de elemente de portofoliu */
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 elemente pe rând */
+    gap: 24px;
+}
+
+.text-box p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px; /* Dimensiunea fontului pentru subtitlu */
+    font-weight: 400;
+    color: #757575;
+    margin: 0;
+}
+
+
+/* Stilizare individuală pentru elementele de portofoliu */
+.portfolio-item {
+    position: relative;
+    width: 360px; /* Lățimea fiecărei cutii */
+    height: 420px; /* Înălțimea fiecărei cutii */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    border-radius: 0px;
+    overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* Activează suprapunerea când treci cu mouse-ul peste imagine */
+.portfolio-item .image-container:hover::before {
+    transform: translateY(0); /* Suprapunerea apare de jos în sus */
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Adjust gap between social icons */
+}
+
+
+/* Stilizarea butoanelor din filtrul portofoliului */
+.portfolio-filters button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #E7E9FC; /* Fără fundal implicit */
+    color: #4D5AE5; /* Culoarea textului */
+    border: none; /* Adăugarea unei borduri pentru o mai bună vizibilitate */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* Social Media Icons */
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+
+.footer-logo p {
+    font-size: 0.75rem; /* Smaller font size to fit within the space */
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0;
+}
+
+
+/* Prima secțiune: Imaginea */
+.portfolio-item .image-container {
+    position: relative;
+    width: 360px;
+    height: 300px; /* Înălțimea imaginii */
+    overflow: hidden; /* Asigură că suprapunerea nu va depăși imaginea */
+}
+
+
+.social-icons a {
+    width: 32px; /* Icon size */
+    height: 32px;
+    display: inline-block;
+}
+
+
+/* Caseta de text de sub imagine */
+.text-box {
+    width: 360px; /* Lățimea casetei de text */
+    height: 120px; /* Înălțimea casetei de text */
+    background-color: #ffffff;
+    padding-left: 15px; /* Spațiu între marginea stângă și text */
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #e0e0e0;
+    z-index: 2; /* Textul rămâne deasupra suprapunerii */
+}
+
+
+header .contacts {
+    display: flex;
+    gap: 35px; /* Distanta dintre adresa de email si numarul de telefon */
+    margin-left: 332px; /* Distanta dintre Contacts si adresa de email */
+}
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 40px; /* Distanta dintre butoane Studio, Portfolio si Contacts */
+}
+
+
+.social-media h3 {
+    font-size: 0.9rem; /* Adjust heading size */
+    margin: 0 0 5px 0; /* Adjust margin so it's close to the icons */
+    color: #ffffff;
+}
+
+.portfolio-filters button:hover,
+.portfolio-filters button:focus {
+    background-color: #4D5AE5; /* Fundal albastru la hover */
+    color: white; /* Text alb la hover */
+}
